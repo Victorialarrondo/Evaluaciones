@@ -1,0 +1,79 @@
+using System;
+namespace E2
+//1. Escribir la sintaxis para definir una función
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Sintaxis para definir una función
+            // tipo_dato_devuelto identificador_función(paramétros)
+            // {
+            //     Bloque de instrucciones
+            // }
+        }
+    }
+}
+
+
+
+// 3. Declarar e inicializar 2 variables: inicio, límite. Si el producto de inicio y límite es menor que 8 e inicio es mayor que límite, definir un ciclo ascendenten de 9 ejecuciones. En cualquier otro caso, definir un ciclo ascendente.
+
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int inicio = 2;
+            int límite = 3;
+            if (inicio * límite < 8 && inicio > límite)
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+            else
+            {
+                for (int i = inicio; i <= límite; i++)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
+
+// 4. Definir e invocar una función para determinar si un número es múltiplo de 5. Si el número es múltiplo de 5, devolver true; en caso contrario, false. Imprimir la devolución utilizando interpolación
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool EsMultiploDeCinco(int número)
+            {
+                return número % 5 == 0;
+            }
+            int número = 10;
+            bool resultado = EsMultiploDeCinco(número);
+            Console.WriteLine($"El número {número} es múltiplo de 5: {resultado}");
+        }
+    }
+}
+
+// 5. Definir e invocar una función vacía para imprimir: "Examen: Programación III", donde "Programación III" corresponda a un argumento
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            void ImprimirExamen(string materia)
+            {
+                Console.WriteLine($"Examen: {materia}");
+            }
+            ImprimirExamen("Programación III");
+        }
+    }
+}
+
+
